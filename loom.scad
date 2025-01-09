@@ -8,7 +8,7 @@ gap_y=block_y+block_x;
 margin_x=block_x*2;
 margin_y=block_y*2/3;
 
-screw_diam=3;
+screw_diam=4.5;
 
 square_side=block_y;
 
@@ -43,16 +43,16 @@ cube([block_x,block_y,2]);
 }
 
 translate([gap_x,margin_y/2,0])
-cylinder(h=5,r=screw_diam);
+cylinder(h=5,r=screw_diam/2);
 
 translate([gap_x*2+screw_diam,margin_y/2,0])
-cylinder(h=5,r=screw_diam);
+cylinder(h=5,r=screw_diam/2);
 
 translate([panel_x-gap_x,margin_y/2,0])
-cylinder(h=5,r=screw_diam);
+cylinder(h=5,r=screw_diam/2);
 
 translate([panel_x-(gap_x*2+screw_diam),margin_y/2,0])
-cylinder(h=5,r=screw_diam);
+cylinder(h=5,r=screw_diam/2);
 
 }
 
@@ -74,16 +74,16 @@ cube([block_x,block_y,2]);
 }
 
 translate([gap_x,margin_y/2,0])
-cylinder(h=5,r=screw_diam);
+cylinder(h=5,r=screw_diam/2);
 
 translate([gap_x*2+screw_diam,margin_y/2,0])
-cylinder(h=5,r=screw_diam);
+cylinder(h=5,r=screw_diam/2);
 
 translate([panel_x-gap_x,margin_y/2,0])
-cylinder(h=5,r=screw_diam);
+cylinder(h=5,r=screw_diam/2);
 
 translate([panel_x-(gap_x*2+screw_diam),margin_y/2,0])
-cylinder(h=5,r=screw_diam);
+cylinder(h=5,r=screw_diam/2);
 
 }
 
