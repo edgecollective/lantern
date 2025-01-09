@@ -89,3 +89,24 @@ cylinder(h=5,r=screw_diam/2);
 
 
 }
+
+translate([0,gap_y*2,0])
+difference() {
+    
+cube([gap_x*2+screw_diam+gap_x,panel_x,1]);
+
+translate([gap_x,margin_y/2,0])
+cylinder(h=5,r=screw_diam/2);
+
+translate([gap_x*2+screw_diam,margin_y/2,0])
+cylinder(h=5,r=screw_diam/2);
+    
+translate([0,panel_x-margin_y]) {
+    translate([gap_x,margin_y/2,0])
+cylinder(h=5,r=screw_diam/2);
+
+translate([gap_x*2+screw_diam,margin_y/2,0])
+cylinder(h=5,r=screw_diam/2);
+}
+
+}
